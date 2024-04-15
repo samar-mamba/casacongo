@@ -1,11 +1,13 @@
 import React from "react";
+import Header from "../components/header";
+
 
 function Home() {
 
     return (
         <>
-        
-      <p  className="text-3xl font-bold underline">CasaCongo</p>
+      <Header/>  
+      
         
         </>
     );
