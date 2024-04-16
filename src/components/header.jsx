@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 
 function Header() {
@@ -12,9 +13,9 @@ function Header() {
         </div>
         <div className="">
             <ul className="flex flex-row justify-around bg-orange-500 p-5 text-white ">
-                <li> <a href="#">Accueil</a></li>
-                <li><a href="#">Vente</a></li>
-                <li><a href="#">Location</a></li>
+                <li> <NavLink to="/">Accueil</NavLink></li>
+                <li><NavLink to="/vente">Vente</NavLink></li>
+                <li><NavLink to="/location">Location</NavLink></li>
             </ul>
         </div>
         

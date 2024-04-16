@@ -5,8 +5,8 @@ function Footer() {
 
     return (
         <>
-        <div className="flex gap-2">
-            <div> 
+        <div className="flex gap-5 content-center justify-around  bg-gradient-to-r from-gray-600 to-black text-white">
+            <div className="flex-col justify-around"> 
             <h4>Mieux nous connaitre</h4>
             <a href="#"><p>Qui sommes nous?</p></a>
             <a href="#"><p>Nous rejoindre</p></a>
