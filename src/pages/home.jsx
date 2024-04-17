@@ -10,7 +10,7 @@ function Home() {
       {/* <Header/>  */}
       <Body/>
 
-      <Footer/> 
+      {/* <Footer/>  */}
                    
       
         

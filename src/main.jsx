@@ -6,7 +6,7 @@ import Vente from './pages/vente.jsx';
 import Location from './pages/location.jsx';
 import Layout from './components/layout.jsx';
 import './index.css'
-import App from './App.jsx'
+
 
  const router = createBrowserRouter(
   [
