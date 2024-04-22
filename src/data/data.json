@@ -1,0 +1,56 @@
+{
+ "current-user": [{}],
+ "maison": [
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "adresse":"kinshasa",
+        "description":"belle maison de  5 chambre avec piscine et jardin",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    },
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    },
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    },
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    },
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    },
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    },
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "image":"./src/images/maison.jpeg"
+    }
+ ]
+
+}
