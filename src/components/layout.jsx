@@ -6,15 +6,18 @@
 
         return(
             <>
-            <nav>
+            <div className="flex flex-col  justify-center content-center "> 
+            <nav className=" sticky inset-0 w-full ">
                 <Header/>
             </nav>
-            <main>
+            <main className="">
                 <Outlet/>
             </main>
-            <footer>
+            <footer className="pt-5">
                 <Footer/>
             </footer>
+
+            </div>
             </>
         )
         

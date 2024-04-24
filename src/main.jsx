@@ -6,6 +6,9 @@ import Vente from './pages/vente.jsx';
 import Location from './pages/location.jsx';
 import Layout from './components/layout.jsx';
 import './index.css'
+import HouseList from './components/house-list.jsx';
+import HouseDetails from './components/house-details.jsx';
+import LoginForm from './components/login-form.jsx';
 
 
  const router = createBrowserRouter(
@@ -20,11 +23,27 @@ import './index.css'
         },
         {
           path:"/vente",
-          element:<Vente/>
+          element:<Vente/>,
+          children:[
+            {
+              path:"",
+              element:<HouseList/>
+            },
+            {
+              path:":id",
+              element:<HouseDetails/>
+            }
+          ]
         },
         {
           path:"/location",
           element:<Location/>
+        },
+        {
+          path:"/login-form",
+          element:<LoginForm  />
+
+
         }
 
       ]
