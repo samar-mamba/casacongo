@@ -9,7 +9,7 @@ function HouseCard({ house }) {
         <>
         <NavLink to={`/vente/${house.id}`} > 
             <div className="" >
-                <img src={house.image} alt={house.name} />
+                <img  className="object-cover w-full h-full rounded" src={house.image} alt={house.name} />
                 <h2 className="">{house.name}
                     
                 </h2>

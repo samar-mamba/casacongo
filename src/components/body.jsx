@@ -9,8 +9,9 @@ function Body() {
         
          
             <img className="h-96 w-full" src="src\images\maison-contemporaine.webp" alt="maison hero" />
-            <div className=""> 
-            <div className="flex flex-col content-center p-5 justify-center gap-5 font-sans">
+            <div className="yl-10 px-6 py-12 lg:px-8"> 
+            <section className="container h-full px-36"> 
+            <div className="flex flex-col content-center  justify-center gap-5 font-sans">
             <div className="flex flex-col gap-5 content-center justify-around ">
             <h1 className="font-bold" >Vendre son appartement ou sa maison plus rapidement !</h1>
             <p>Afin de vous aider à mettre en vente votre appartement ou votre maison,  
@@ -30,7 +31,7 @@ function Body() {
                   Qu'il s'agisse de vendre son appartement rapidement ou de mettre en location sa maison,
                    la première étape consiste à bien rédiger votre annonce immobilière !
     Pour mettre une annonce immobilière gratuite sur CasaCongp il vous faut d'abord vous assurer 
-    que celle-ci se situe a ki,shasa, en effet pour le moment, nous ne diffusons pas 
+    que celle-ci se situe a kinshasa, en effet pour le moment, nous ne diffusons pas 
         de petites annonces en dehors.
 
 </p>
@@ -38,6 +39,8 @@ function Body() {
         </div>
 
          </div>
+
+         </section>
          </div>
         </>
         

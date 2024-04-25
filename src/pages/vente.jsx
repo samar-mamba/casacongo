@@ -16,9 +16,11 @@ function Vente() {
                 
     return (
         <> 
-        <div className="p-5">
-        <h1 className="p-5 font-bold">Choisissez votre Maison à acheter</h1>
+        <div className="yl-10 px-6 py-12 lg:px-8 ">
+            <div className="container h-full px-36 ">
+        
         <Outlet />
+        </div>
         </div>
         </>
     )    

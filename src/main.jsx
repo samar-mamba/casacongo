@@ -9,6 +9,7 @@ import './index.css'
 import HouseList from './components/house-list.jsx';
 import HouseDetails from './components/house-details.jsx';
 import LoginForm from './components/login-form.jsx';
+import Register from './components/register.jsx';
 
 
  const router = createBrowserRouter(
@@ -38,16 +39,20 @@ import LoginForm from './components/login-form.jsx';
         {
           path:"/location",
           element:<Location/>
-        },
-        {
-          path:"/login-form",
-          element:<LoginForm  />
-
-
         }
-
+        
       ]
-    }
+      
+    },
+    
+    {
+      path:"/register",
+      element:<Register  />
+    },
+    {
+      path:"/login-form",
+      element:<LoginForm  />
+    },
   ]
 
  )

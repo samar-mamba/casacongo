@@ -6,7 +6,7 @@ function Buton() {
     return(
         <>
 
-        <button className="bg-orange-500 hover:bg-orange-700 rounded-md p-1 ">Deposer une annonce</button>
+        <button className="bg-orange-500 hover:bg-orange-600 rounded-md p-1 ">Deposer une annonce</button>
         </>
     )
     

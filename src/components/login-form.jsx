@@ -1,16 +1,21 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 function LoginForm () {
   return (
-    <section className="yl-10 px-6 py-12 lg:px-8">
-      <div className="container h-full px-6 py-24">
+    <section className="yl-10 px-6  lg:px-8">
+        <div className='border-b-2 border-white-500  p-2 shadow-md'>
+        <NavLink className="flex items-center justify-around " to="/">
+        <button className='rounded bg-orange-500 w-32 p-2  '>Retour</button>
+        <p className="text-orange-500 font-semibold">CongoCasa</p>
+        </NavLink></div>
+      <div className="container h-full ">
         <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
           <div className="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
             <img
-              src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+              src="https://media.istockphoto.com/id/1281150061/fr/vectoriel/enregistrer-compte-soumettre-acc%C3%A8s-mot-de-passe-de-connexion-nom-dutilisateur-internet.jpg?s=612x612&w=0&k=20&c=URSE0YDid2ZzBTbanXt298fdOMvdcctXVh7gKOomjJk="
               className="w-full"
               alt="Phone image"
             />
@@ -18,7 +23,7 @@ function LoginForm () {
            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Connectez-vous 
+          Connectez-vous pour découvrir toutes nos fonctionnalités.
           </h2>
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
@@ -110,7 +115,7 @@ function LoginForm () {
                 </a>
               </div>
               <div className="text-center py-2 text-gray-500">
-                 Don't have an account yet? <Link className="underline font-semibold leading-6 text-indigo-600 hover:text-indigo-500" to={'/register'}>S'incrire</Link>
+              Vous n'avez pas encore de compte? <Link className="underline font-semibold leading-6 text-indigo-600 hover:text-indigo-500" to={'/register'}>S'incrire</Link>
               </div>
             </form>
           </div>
