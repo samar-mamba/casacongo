@@ -10,6 +10,9 @@ import HouseList from './components/house-list.jsx';
 import HouseDetails from './components/house-details.jsx';
 import LoginForm from './components/login-form.jsx';
 import Register from './components/register.jsx';
+import LocationList from './components/location-list.jsx';
+import LocationDetails from './components/location-details.jsx';
+import FormAnnonce from './components/form-annonce.jsx';
 
 
  const router = createBrowserRouter(
@@ -38,7 +41,17 @@ import Register from './components/register.jsx';
         },
         {
           path:"/location",
-          element:<Location/>
+          element:<Location/>,
+          children:[
+            {
+              path:"",
+              element:<LocationList/>
+            },
+            {
+              path:":id",
+              element:<LocationDetails/>
+            }
+          ]
         }
         
       ]
@@ -52,6 +65,10 @@ import Register from './components/register.jsx';
     {
       path:"/login-form",
       element:<LoginForm  />
+    },
+    {
+      path:"/form-annonce",
+      element:<FormAnnonce />
     },
   ]
 

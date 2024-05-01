@@ -1,11 +1,20 @@
 import React from "react";
 import { useState , useEffect } from "react";
-import Datamaison from "../data/data.json";
+import Datamaison from "../datas/data.json";
 import HouseCard from "./house-card";
 
 
 function HouseList() {
     const Data = Datamaison.maison
+
+    // const [data, setTweets] = useState([]);
+    // useEffect(() => {
+    //         fetch('src/datas/data.json')
+    //           .then(response => response.json())
+    //           .then(data => setTweets(data.maison));
+    //       }, []);
+
+    //       const Data = data.maison
 
 
     return (
@@ -20,19 +29,6 @@ function HouseList() {
             ))}
 
        </div>
-            {/* <ul className="flex flex-col gap-5 justify-around flex-wrap"> 
-                {Data.map((list)=>(
-                    <li key={list.id} className="flex gap-5">
-                       <img src= {list.image} alt="" /> 
-                       <p className="flex flex-col">{list.name} 
-                       <span>{list.prix} </span>
-                       </p>
-                       
-                       </li>
-                    
-                ))}
-        
-            </ul> */}
 
         
 
