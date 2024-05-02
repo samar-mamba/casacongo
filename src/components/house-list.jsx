@@ -2,19 +2,34 @@ import React from "react";
 import { useState , useEffect } from "react";
 import Datamaison from "../datas/data.json";
 import HouseCard from "./house-card";
+import axios from "axios";
 
 
 function HouseList() {
-    const Data = Datamaison.maison
+    // const Data = Datamaison.maison
 
-    // const [data, setTweets] = useState([]);
-    // useEffect(() => {
-    //         fetch('src/datas/data.json')
-    //           .then(response => response.json())
-    //           .then(data => setTweets(data.maison));
-    //       }, []);
+// importation de données avec axios
 
-    //       const Data = data.maison
+
+const [tweets, setTweets]= useState([]);
+    useEffect(() => {
+        axios.get("src/datas/data.json")
+        .then(response => {
+           setTweets(response.data)
+        })
+        .catch(error => {
+           console.error("Erreur lors de la récupération des tweets :" ,error)
+        });
+}, [])
+
+// console.log(tweets)
+
+    const Data = tweets
+    // console.log(Data);
+//     const data = Data.maison
+//     console.log("voici les msons" ,data);
+
+
 
 
     return (
@@ -23,7 +38,7 @@ function HouseList() {
         <div className="grid grid-cols-3 gap-4 grid-rows-3 sm:grid-cols-2  md:grid-cols-3 ">
             
 
-            {Data.map(house=>(
+            { Data.maison && Data.maison.map(house=>(
 
               <HouseCard key={house.id} house={house} />
             ))}
