@@ -1,28 +1,19 @@
 import React from "react";
 // import maison from "..images/maison-contemporaine.webp"
 import Buton from "./buton";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-// import '@splidejs/react-splide/css';
+
+import Caroussel from "./caroussel";
 
 
 function Body() {
 
     return (
         <>
-            {/* <Splide className="" aria-label="My Favorite Images" options={{
-                autoplay: true,
-                type:"loop"
-            }}>
-                <SplideSlide>
-                    <img className="h-96 w-full" src="src\images\maison-contemporaine.webp" alt="Image 1" />
-                </SplideSlide>
-                <SplideSlide>
-                    <img className="h-96 w-full" src="https://i.ibb.co/FhjN3H4/maison-neuve.jpg" alt="Image 2" />
-                </SplideSlide>
-            </Splide> */}
-
-            <img className="h-96 w-full" src="src\images\maison-contemporaine.webp" alt="maison hero" />
+            
+            <Caroussel/>
+            {/* <img className="h-96 w-full" src="src\images\maison-contemporaine.webp" alt="maison hero" /> */}
             <div className="yl-10 px-6 py-12 lg:px-8">
+            
                 <section className="container h-full px-36">
                     <div className="flex flex-col content-center  justify-center gap-5 font-sans">
                         <div className="flex flex-col gap-5 content-center justify-around ">

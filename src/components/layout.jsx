@@ -7,10 +7,10 @@
         return(
             <>
             <div className="flex flex-col  justify-center content-center "> 
-            <nav className=" sticky inset-0 w-full ">
+            <nav className="z-50 sticky inset-0 w-full ">
                 <Header/>
             </nav>
-            <main className="">
+            <main className="z-20">
                 <Outlet/>
             </main>
             <footer className="pt-5">
