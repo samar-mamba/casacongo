@@ -6,25 +6,25 @@ import axios from "axios";
 
 
 function HouseList() {
-    // const Data = Datamaison.maison
+    const Data = Datamaison.maison
 
 // importation de données avec axios
 
 
-const [house, setHouse]= useState([]);
-    useEffect(() => {
-        axios.get("src/datas/data.json")
-        .then(response => {
-           setHouse(response.data)
-        })
-        .catch(error => {
-           console.error("Erreur lors de la récupération des tweets :" ,error)
-        });
-}, [])
+// const [house, setHouse]= useState([]);
+//     useEffect(() => {
+//         axios.get("src/datas/data.json")
+//         .then(response => {
+//            setHouse(response.data)
+//         })
+//         .catch(error => {
+//            console.error("Erreur lors de la récupération des tweets :" ,error)
+//         });
+// }, [])
 
 // console.log(house)
 
-    const Data = house
+    // const Data = house
     // console.log(Data);
 //     const data = Data.maison
 //     console.log("voici les msons" ,data);
@@ -38,7 +38,7 @@ const [house, setHouse]= useState([]);
         <div className="grid grid-cols-3 gap-4 grid-rows-3 sm:grid-cols-2  md:grid-cols-3 ">
             
 
-            { Data.maison && Data.maison.map(house=>(
+            { Data.map(house=>(
 
               <HouseCard key={house.id} house={house} />
             ))}

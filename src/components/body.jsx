@@ -21,7 +21,7 @@ function Body() {
                 </SplideSlide>
             </Splide> */}
 
-            <img className="h-96 w-full" src="src\images\maison-contemporaine.webp" alt="maison hero" />
+            <img className="h-96 w-full" src="https://i.ibb.co/9h8K96S/maison-contemporaine.webp" alt="maison hero" />
             <div className="yl-10 px-6 py-12 lg:px-8">
                 <section className="container h-full px-36">
                     <div className="flex flex-col content-center  justify-center gap-5 font-sans">
