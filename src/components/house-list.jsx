@@ -11,20 +11,20 @@ function HouseList() {
 // importation de données avec axios
 
 
-const [tweets, setTweets]= useState([]);
+const [house, setHouse]= useState([]);
     useEffect(() => {
         axios.get("src/datas/data.json")
         .then(response => {
-           setTweets(response.data)
+           setHouse(response.data)
         })
         .catch(error => {
            console.error("Erreur lors de la récupération des tweets :" ,error)
         });
 }, [])
 
-// console.log(tweets)
+// console.log(house)
 
-    const Data = tweets
+    const Data = house
     // console.log(Data);
 //     const data = Data.maison
 //     console.log("voici les msons" ,data);

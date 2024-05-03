@@ -14,7 +14,7 @@ function Header() {
     return (
         <>
 
-        <div className=" bg-white"> 
+        <div className=" bg-white flex flex-col  "> 
         <div className="flex flex-row justify-around items-center  p-5 ">
         <NavLink className="" to="/"> <p className="text-orange-500 ">CongoCasa</p></NavLink>
             <Buton></Buton>
@@ -35,9 +35,10 @@ function Header() {
                 <li className="border-orange-500 border-b-2 hover:border-b-2 hover:border-white"><NavLink to="/location">Location</NavLink></li>
             </ul>
         </div>
-
-
         </div>
+
+        {/* essaie du responsive */}
+        
         
         </>
     )

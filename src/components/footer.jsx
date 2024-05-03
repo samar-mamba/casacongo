@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTopPage from "./button-scroll";
 
 
 function Footer() {
@@ -19,6 +20,7 @@ function Footer() {
             <a href="#"><p>Conditions générales de vente</p></a>
             <a href="#"><p>Vos droits et obligations</p></a>
             </div>
+            <ScrollToTopPage/>
         </div>
         </>
     )
