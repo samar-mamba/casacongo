@@ -14,7 +14,7 @@ function Header() {
     return (
         <>
 
-        <div className=" bg-white flex flex-col  "> 
+        <div className=" z-50 bg-white flex flex-col  "> 
         <div className="flex flex-row justify-around items-center  p-5 ">
         <NavLink className="" to="/"> <p className="text-orange-500 ">CongoCasa</p></NavLink>
             <Buton></Buton>
