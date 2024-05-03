@@ -1,0 +1,143 @@
+{
+ "current-user": [{}],
+ "maison": [
+    {
+        "id":1,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "description":"belle maison de  5 chambre avec piscine et jardin",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/mCFgKxw/belle-maison-archi-LCL.jpg"
+    },
+    {
+        "id":2,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/5KNbzYd/Whats-App-Image.webp",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    },
+    {
+        "id":3,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "numero":"0812588278",
+        "prix": "1250$",
+        "image":"https://i.ibb.co/vLmk3SN/louer.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":4,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/CBMTGpm/auberge.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":5,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/LCbzb9D/hotel-relax.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":6,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/Mp7ZXR0/maison-moderne-etage-piscine.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":7,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "numero":"0812588278",
+        "prix": "1250$",
+        "image":"https://i.ibb.co/FhjN3H4/maison-neuve.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    }
+ ],
+ "location": [
+    {
+        "id":1,
+        "name":"Maison chambre salon",
+        "lieux":"kinshasa",
+        "description":"belle maison de  5 chambre avec piscine et jardin",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/10vL87W/maisonlouer.jpg"
+    },
+    {
+        "id":2,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/dt6KDjc/Exterior-2.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    },
+    {
+        "id":3,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "numero":"0812588278",
+        "prix": "1250$",
+        "image":"https://i.ibb.co/QdqVZjf/maison-contemporaine.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":4,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/vmVjVfw/maison-cubique.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":5,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/pQrP6fK/Maison-de-Luxe-Haut-de-Gamme.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":6,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "prix": "1250$",
+        "numero":"0812588278",
+        "image":"https://i.ibb.co/Mp7ZXR0/maison-moderne-etage-piscine.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    },
+    {
+        "id":7,
+        "name":"appartement 3 pieces",
+        "lieux":"kinshasa",
+        "numero":"0812588278",
+        "prix": "1250$",
+        "image":"https://i.ibb.co/FhjN3H4/maison-neuve.jpg",
+        "description":"Superbe appartement en duplex entièrement rénové de type 5, idéalement situé sur la commune d’Aix les Milles. Cet appartement spacieux offre un cadre de vie élégant et confortable avec ses cinq pièces lumineuses et bien agencées. La rénovation récente a été réalisée avec des matériaux de qualité offrant un mariage harmonieux entre modernité et caractère authentique de la bastide dans laquelle il se situe."
+    
+    }
+ ]
+}
