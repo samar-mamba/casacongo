@@ -6,12 +6,9 @@ import axios from "axios";
 
 
 function HouseList() {
-
     // const Data = Datamaison.maison lien axios:src/datas/data.json"
 
-
 // importation de données avec axios
-
 
 
 const [house, setHouse]= useState([]);
@@ -25,12 +22,10 @@ const [house, setHouse]= useState([]);
         });
 }, [])
 
-
 console.log(house)
 
     const Data = house
     console.log(Data);
-
 //     const data = Data.maison
 //     console.log("voici les msons" ,data);
 // Data.maison && Data.maison.map
@@ -40,7 +35,7 @@ console.log(house)
         <div className="grid grid-cols-3 gap-4 grid-rows-3 sm:grid-cols-2  md:grid-cols-3 ">
             
 
-            {Data.maison && Data.maison.map(house=>(
+            { Data.maison && Data.maison.map(house=>(
 
               <HouseCard key={house.id} house={house} />
             ))}
