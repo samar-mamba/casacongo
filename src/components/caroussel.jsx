@@ -14,13 +14,13 @@ function Caroussel() {
                 type:"loop"
             }}>
                 <SplideSlide>
-                    <img className="h-96 w-full" src="https://i.pinimg.com/originals/e2/64/54/e26454d954620f0802906b8beaa38519.jpg" alt="Image 1" />
+                    <img className="h-96 w-full" src="https://res.cloudinary.com/dcgjop9dg/image/upload/v1714759822/maison-contemporaine_afkdiu.webp" alt="Image 1" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img className="h-96 w-full" src="https://i.pinimg.com/564x/74/a1/ce/74a1ce39517604d4812123b25e256f0c.jpg" alt="Image 2" />
+                    <img className="h-96 w-full" src="https://res.cloudinary.com/dcgjop9dg/image/upload/v1714760119/Exterior-2_l9epkf.jpg" alt="Image 2" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img className="h-96 w-full" src="https://i.pinimg.com/originals/60/e0/22/60e02263bdf3e15daa5a89905b84eda6.jpg" alt="Image 2" />
+                    <img className="h-96 w-full" src="https://res.cloudinary.com/dcgjop9dg/image/upload/v1714760001/belle-maison-archi-LCL_ogp9ep.jpg" alt="Image 2" />
                 </SplideSlide>
             </Splide>
             </div>

@@ -6,7 +6,7 @@ import axios from "axios";
 
 
 function HouseList() {
-    // const Data = Datamaison.maison
+    // const Data = Datamaison.maison lien axios:src/datas/data.json"
 
 // importation de données avec axios
 
@@ -18,20 +18,17 @@ const [house, setHouse]= useState([]);
            setHouse(response.data)
         })
         .catch(error => {
-           console.error("Erreur lors de la récupération des tweets :" ,error)
+           console.error("Erreur lors de la récupération des house:" ,error)
         });
 }, [])
 
-// console.log(house)
+console.log(house)
 
     const Data = house
-    // console.log(Data);
+    console.log(Data);
 //     const data = Data.maison
 //     console.log("voici les msons" ,data);
-
-
-
-
+// Data.maison && Data.maison.map
     return (
         <>
         <h1 className="p-5 font-bold">Choisissez votre Maison à acheter</h1>
