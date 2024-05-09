@@ -1,7 +1,27 @@
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink, useNavigate} from "react-router-dom";
+import React, { useState } from "react";
 
 
  function Register() {
+
+   const [email,setEmail] = useState('');
+  const [password,setPassword] = useState('');
+  const navigate = useNavigate();
+
+  async function signUpUser(e) {
+    e.preventDefault();
+    try {
+      await axios.post('https://capstone2-c2-samar-mamba.onrender.com/user/signup', {
+        email,
+        password,
+      });
+      alert(`Inscription réussi. Vous pouvez maintenant vous connecter.
+      Cliquer sur bouton OK pour vous connecter`);
+      navigate('/login-form')
+    } catch (e) {
+      alert(`votre enregistrement à échouer. Veuillez réessayer plus tard`);
+    }
+  }
 
 
     return (
@@ -13,6 +33,7 @@ import {Link, NavLink} from "react-router-dom";
         <button className='rounded bg-orange-500 w-32 p-2  '>Retour</button>
         <p className="text-orange-500 font-semibold">CongoCasa</p>
         </NavLink></div>
+
           <div className="sm:mx-auto sm:w-full sm:max-w-sm pt-5">
             <img
               className="mx-auto h-32 w-auto"
@@ -25,7 +46,7 @@ import {Link, NavLink} from "react-router-dom";
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+            <form className="space-y-6" onSubmit={signUpUser}>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Email 
@@ -34,6 +55,8 @@ import {Link, NavLink} from "react-router-dom";
                   <input
                     id="email"
                     name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     autoComplete="email"
                     required
@@ -52,6 +75,8 @@ import {Link, NavLink} from "react-router-dom";
                   <input
                     id="password"
                     name="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     type="password"
                     autoComplete="current-password"
                     required

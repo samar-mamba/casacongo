@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink,Link } from "react-router-dom";
+import axios from "axios";
 
 function FormAnnonce() {
+
+  const [post, setPost] = useState({
+    "nom":'',
+    "lieux":'',
+    "prix":'',
+    "description":'',
+    "image":'',
+    "choix":''
+  })
+
+  const handleInput = (event) => {
+    setPost({...post, [event.target.name]: event.target.value})
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(post);
+
+    
+    try {
+      const response = await axios.post("http://localhost:3000/api/vente", post);
+      console.log(response.data);
+
+      // Traitez la réponse de l'API ici
+    } catch (error) {
+      console.error(error);
+      // Gérez les erreurs ici
+    }
+  };
+  
 
 
     return (
@@ -20,7 +51,7 @@ function FormAnnonce() {
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="nom" className="block text-sm font-medium leading-6 text-gray-900">
                   Nom 
@@ -28,6 +59,7 @@ function FormAnnonce() {
                 <div className="mt-2">
                   <input
                     id="nom"
+                    onChange={ handleInput}
                     name="nom"
                     type="text"
                     autoComplete="nom"
@@ -47,6 +79,7 @@ function FormAnnonce() {
                   <input
                     id="lieux"
                     name="lieux"
+                    onChange={ handleInput}
                     type="text"
                     autoComplete="text"
                     required
@@ -59,14 +92,15 @@ function FormAnnonce() {
               <div>
                 <div className="flex items-center justify-between">
                   <label htmlFor="prix" className="block text-sm font-medium leading-6 text-gray-900">
-                    Prix
+                    Prix en ($)
                   </label>
                 </div>
                 <div className="mt-2">
                   <input
                     id="prix"
                     name="prix"
-                    type="text"
+                    onChange={ handleInput}
+                    type="number"
                     autoComplete="text"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -78,14 +112,16 @@ function FormAnnonce() {
               <div>
                 <div className="flex items-center justify-between">
                   <label htmlFor="image" className="block text-sm font-medium leading-6 text-gray-900">
-                    Images
+                    Url de l'image
                   </label>
                 </div>
                 <div className="mt-2">
                   <input
                     id="image"
                     name="image"
+                    onChange={ handleInput}
                     type="text"
+                    placeholder="http://..."
                     autoComplete="text"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -101,7 +137,7 @@ function FormAnnonce() {
                   </label>
                 </div>
                 <div className="mt-2">
-                  <select   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  <select onChange={ handleInput}  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                    name="choix" id="choix">
                     <option value="">faites un choix</option>
                     <option value="vente">Mettre en vente</option>
@@ -118,16 +154,13 @@ function FormAnnonce() {
                   </label>
                 </div>
                 <div className="mt-2">
-                  <textarea
+                  <textarea onChange={ handleInput}
                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   name="description" id="description" cols="30" rows="10"></textarea>
                 </div>
                 
               </div>
-  
-  
-  
-  
+
               <div>
                 <button
                   type="submit"
