@@ -40,7 +40,7 @@ console.log(house)
         <div className="grid grid-cols-3 gap-4 grid-rows-3 sm:grid-cols-2  md:grid-cols-3 ">
             
 
-            { Data.map(house=>(
+            {Data.maison && Data.maison.map(house=>(
 
               <HouseCard key={house.id} house={house} />
             ))}
