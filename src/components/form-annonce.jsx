@@ -5,12 +5,19 @@ import axios from "axios";
 function FormAnnonce() {
 
   const [post, setPost] = useState({
-    "nom":'',
-    "lieux":'',
-    "prix":'',
+    // "nom":'',
+    // "lieux":'',
+    // "prix":'',
+    // "description":'',
+    // "image":'',
+    // "choix":'',
+
+    "addresse":'',
     "description":'',
-    "image":'',
-    "choix":''
+    "prix":'',
+    "categorie":'',
+    "photo":'',
+    "ville":'',
   })
 
   const handleInput = (event) => {
@@ -23,7 +30,7 @@ function FormAnnonce() {
 
     
     try {
-      const response = await axios.post("http://localhost:3000/api/vente", post);
+      const response = await axios.post("https://capstone2-c2-samar-mamba.onrender.com/user/ajout", post);
       console.log(response.data);
 
       // Traitez la réponse de l'API ici
@@ -60,7 +67,7 @@ function FormAnnonce() {
                   <input
                     id="nom"
                     onChange={ handleInput}
-                    name="nom"
+                    name="ville"
                     type="text"
                     autoComplete="nom"
                     required
@@ -78,7 +85,7 @@ function FormAnnonce() {
                 <div className="mt-2">
                   <input
                     id="lieux"
-                    name="lieux"
+                    name="addresse"
                     onChange={ handleInput}
                     type="text"
                     autoComplete="text"
@@ -118,7 +125,7 @@ function FormAnnonce() {
                 <div className="mt-2">
                   <input
                     id="image"
-                    name="image"
+                    name="photo"
                     onChange={ handleInput}
                     type="text"
                     placeholder="http://..."
@@ -138,7 +145,7 @@ function FormAnnonce() {
                 </div>
                 <div className="mt-2">
                   <select onChange={ handleInput}  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                   name="choix" id="choix">
+                   name="categorie" id="choix">
                     <option value="">faites un choix</option>
                     <option value="vente">Mettre en vente</option>
                     <option value="location">Faire louer</option>

@@ -8,6 +8,8 @@ import React, { useState } from "react";
   const [password,setPassword] = useState('');
   const navigate = useNavigate();
 
+  console.log(email);
+
   async function signUpUser(e) {
     e.preventDefault();
     try {
@@ -19,7 +21,13 @@ import React, { useState } from "react";
       Cliquer sur bouton OK pour vous connecter`);
       navigate('/login-form')
     } catch (e) {
-      alert(`votre enregistrement à échouer. Veuillez réessayer plus tard`);
+      // alert(`votre enregistrement à échouer. Veuillez réessayer plus tard`);
+
+      if (error.response) {
+        alert(error.response.data.error || 'Error creating user');
+      } else {
+        alert('Error creating user');
+      }
     }
   }
 
