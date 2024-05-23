@@ -20,7 +20,7 @@ import React, { useState } from "react";
       alert(`Inscription réussi. Vous pouvez maintenant vous connecter.
       Cliquer sur bouton OK pour vous connecter`);
       navigate('/login-form')
-    } catch (e) {
+    } catch (error) {
       // alert(`votre enregistrement à échouer. Veuillez réessayer plus tard`);
 
       if (error.response) {
